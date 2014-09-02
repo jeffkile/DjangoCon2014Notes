@@ -40,20 +40,20 @@ Front End
 Back End
 --------
 
-Cached Sessions
-    `contrib.session.backends.cache`
+* Cached Sessions
+    - `contrib.session.backends.cache`
 
-Use cached template loader
-    If not on by default
+* Use cached template loader
+    - If not on by default
 
-Jinja2 as template engine
-    Best for new projects, hard to transition to 
+* Jinja2 as template engine
+    - Best for new projects, hard to transition to 
 
 
 Tools
 -----
 
-Backend Profiler:
+* Backend Profiler:
     - Middleware
     - (link in slides to a good one)
     - Displays: 
@@ -62,17 +62,17 @@ Backend Profiler:
         - SQL time
         - Python time
 
-New Relic
+* New Relic
 
 
 SQL
 ---
 
-djang-debug-toolbar
+* django-debug-toolbar
     - Shows slow queries
     - Does not show SQL for queries that just return JSON
     
-Query to slow
+* Query to slow
     - `values/values_list()`
         - Avoid python object creation overhead when you want a dict or list
     - `only()`
@@ -83,7 +83,7 @@ Query to slow
         - Get all fields except those in defer()
         - Opposite of only
 
-Too many quires
+* Too many quires
     - `select_related()`
         - Helps avoid extra queries to grab objects referenced by foreign keys
     - `prefetch_related()`
@@ -91,26 +91,26 @@ Too many quires
     - `bulk_create()`
         - Do one insert instead of multiple
 
-Redis or Memcache may be better for searching or using lists or key/value store
+* Redis or Memcache may be better for searching or using lists or key/value store
 
 
 Python
 ------
 
-Algorithms
+* Algorithms
     - Nested loops
 
-Doing extra work inside a loop
+* Doing extra work inside a loop
     - Do not do computations or create variables inside a loop that you can do outside it
 
 
 Django
 ______
 
-`decimal('0.1')` is used a lot and it is slow
+* `decimal('0.1')` is used a lot and it is slow
     - use DECIMAL_POINT_ONE = decimal('0.1') if you need this in a loop
 
-`reverse()` is slow
+* `reverse()` is slow
     - Do not call it in a loop
         - Use string replace if you have to do this
 
@@ -118,16 +118,16 @@ ______
 Cache
 -----
 
-View Cache
+* View Cache
 
-Template fragment cache
+* Template fragment cache
 
-Function level cache
+* Function level cache
     - django-cache-utils
     - django-cache-helper
         - Decorator
 
-Query cache
+* Query cache
     - django-cache-machine
     - django-cacheops
 
