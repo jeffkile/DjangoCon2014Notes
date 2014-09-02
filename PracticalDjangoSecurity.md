@@ -5,13 +5,13 @@ Levi Gross
 2 Main categories:
 
 Laack of or improperly impelemnted
--DOS
--Auth bypass
--Bad crypto primitives
+    -DOS
+    -Auth bypass
+    -Bad crypto primitives
 
 Mixing data and code
--SQL injection
--XSS
+    -SQL injection
+    -XSS
 
 
 Mixing Data and code:
@@ -28,9 +28,9 @@ Put authorization code all in one place, do not scatter it
 
 Django built in stuff:
 Cryptoraphically sign:
-    django.core.crypto.signer
+    `django.core.crypto.signer`
 Encode js:
-    {{foo|js_encode}}
+    `{{foo|js_encode}}`
 
 
 Django isn't perfect, things to update:
