@@ -8,9 +8,9 @@ Start with the front end
 Front End
 ---------
 
-Cache Static Assets 
-    Forever (as long as they do not change)
-    Use:
+* Cache Static Assets 
+    * Forever (as long as they do not change)
+    * Use:
         - CachedStaticFilesStorage or CachedFilesMixin
             - Built into Django
             - They change file name
@@ -19,20 +19,20 @@ Cache Static Assets
             - Checks hash of file to see if its changed
                 - Uses Memcache to make this fast
 
-Bundle/minify/compress static assests
-    Reduce # of requests, download time
-    Use a static-asset-manager 2 good ones:
+* Bundle/minify/compress static assests
+    * Reduce # of requests, download time
+    * Use a static-asset-manager 2 good ones:
         - django-pipline
         - webassets
-    Lower number of requests by using data URIs for images
+    * Lower number of requests by using data URIs for images
         - Pipeline does this automatically for small files
 
-Serve static files via a CDN
+* Serve static files via a CDN
     
-Serve more stuff as static assets
-    Why?
+* Serve more stuff as static assets
+    * Why?
         - So they can be cached
-    Examples of things to serve:
+    * Examples of things to serve:
         - Front end templates (angular templates)
         - JSON data
 
