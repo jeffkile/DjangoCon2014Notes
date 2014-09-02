@@ -73,6 +73,7 @@ Ansible example:
     with_items:
         - source /var/activate
         - cd bar
+```
 
 
 4. Wrap Up
