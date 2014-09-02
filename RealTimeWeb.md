@@ -4,13 +4,13 @@ Shelly Jacienda
 
 Real Time DB monitoring
 
-Celery
+*Celery
     -Async task runner
     
-Websockets
+*Websockets
     -Pusher or Twisted are SASS provider if you do not want to setup your own
     
-Redis
+*Redis
     -Python client
     -Because SQL was too slow for just a key/value store
     -https://pypi.python.org/pypi/redis
