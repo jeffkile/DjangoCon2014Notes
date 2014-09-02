@@ -1,5 +1,5 @@
-Performant Django
-
+#Performant Django
+*Ara Anjargolian*
 
 Start with the front end
 80-90% of user response time is spent in the frontend
