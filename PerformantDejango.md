@@ -105,7 +105,7 @@ Python
 
 
 Django
-______
+------
 
 * `decimal('0.1')` is used a lot and it is slow
     - use DECIMAL_POINT_ONE = decimal('0.1') if you need this in a loop
