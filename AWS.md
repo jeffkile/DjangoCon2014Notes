@@ -1,4 +1,7 @@
+##Top tips for developing and deploying on AWS
+*Craig Bruce*
 
+https://speakerdeck.com/craigbruce/top-tips-for-developing-and-deploying-on-aws
 
 OpenEye
 
