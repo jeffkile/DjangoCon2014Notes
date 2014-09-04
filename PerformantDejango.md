@@ -1,5 +1,7 @@
-Performant Django
+#Performant Django
+*Ara Anjargolian*
 
+Slides: http://www.slideshare.net/g33ktalk/performant-django-ara-anjargolian-37550639
 
 Start with the front end
 80-90% of user response time is spent in the frontend
@@ -55,7 +57,7 @@ Tools
 
 * Backend Profiler:
     - Middleware
-    - (link in slides to a good one)
+    - A good one: https://gist.github.com/Miserlou/3649773
     - Displays: 
         - What function/modules were called
         - How much time was spent in each function
@@ -105,7 +107,7 @@ Python
 
 
 Django
-______
+------
 
 * `decimal('0.1')` is used a lot and it is slow
     - use DECIMAL_POINT_ONE = decimal('0.1') if you need this in a loop
