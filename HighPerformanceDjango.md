@@ -1,10 +1,10 @@
 ##High Performance Django
 
-
+Code: https://github.com/ipmb/hpd-talk
 
 Django does not scale
 
-Instagram, pintrest and disqus, are not actually using Django
+Instagram, pintrest and disqus, are using a lot of other things on top of Django to get it to scale.
 
 
 #Tools
